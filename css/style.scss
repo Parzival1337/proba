@@ -1,0 +1,432 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+  outline: none; 
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 1100px;
+  color: #333;
+  background: #f7f7f7;
+  font-size: 1em;
+  font-family: "Satisfy", cursive;
+  line-height: 135%;
+  background-image: url(../image/fon5.jpg);
+  background-size: 2150px;
+}
+
+/*оформление ссылок*/
+a {
+  color: #000000;
+  text-decoration: none;
+  transition: all.6s ease;
+  -o-transition: all.6s ease;
+  -webkit-transition: all.6s ease;
+  -moz-transition: all.6s ease;
+}
+
+a:hover {
+  color: #000000;
+  text-decoration: none;
+  transition: all.6s ease;
+  -o-transition: all.6s ease;
+  -webkit-transition: all.6s ease;
+  -moz-transition: all.6s ease;
+}
+
+a:active {
+  color: #000000;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  width: auto\9;
+}
+
+hr{
+  display: block;
+  border: 0px;  
+  height: 1px;
+  border-top: 1px solid #ccc;
+  padding: 0;
+}
+
+.left {
+  float: left;
+  font-size: 30px;
+  margin-top: 10px;
+}
+.right {
+  float: right;
+  font-size: 15px;
+  margin-top: 0px;
+}
+
+.clear { 
+  clear: both;
+}
+
+/* Selection block */
+
+::selection {color: #fff;}
+::-moz-selection {color: #fff;}
+::-o-selection {color: #fff;}
+::-webkit-selection {color: #fff;}
+
+header,
+footer {
+  width: 98%;
+  background-color: #fff;
+  float: left;
+  background-image: url(../image/fon4.jpg);
+  background-size: cover;  
+  /* min-height: 50px; */
+}
+
+header {
+  border-bottom: 2px solid silver;
+  padding: 1%;
+  height: 30px;
+}
+
+header img{
+  width: 40px;
+  height: 40px;
+  float: left;
+  vertical-align: middle;
+  margin-top: -10px;
+  margin-right: 5px;
+}
+
+header input {
+  width: 20%;
+  height: 30px;
+  top: 10px;
+  align-items: center;
+  position: absolute; 
+  padding-left: 10px;
+  border: 2px solid #000000;
+  border-radius: 5px;
+  outline: none;
+  background: linear-gradient(120deg, #8aeb8c, #56f568, #39ffcd, #4db2ff);
+  color: #000;
+}
+
+.logo {
+  font-size: 2em;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-decoration: none;
+  background-image: linear-gradient(125deg, #056310,#098f18,#198d70,#2c81c2);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.contact {
+  font-size: 2em;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin-left: 20px;
+}
+
+input[type="text"].field {
+  border-radius: 5px;
+  border: 2px solid silver;
+  padding: 5px;
+  margin-left: 20px;
+}
+
+input[type="text"].field:focus {
+  border: 2px solid #f58b8b;
+}
+
+#menu {
+  color:#ffffff;
+  font-weight: bolder;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 2em;
+}
+
+#menu hr {
+  width: 500px;
+  max-width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#menuHrefs a {
+  padding: 5px;
+  border-radius: 5px;
+  margin-right: 5px;
+  color: #ffffff;
+  font-size: 1.4em;
+}
+
+#menuHrefs a:hover{
+  background-color: #e2e2e2;
+}
+
+/* Основные стили для сайта */
+
+#wrapper {
+  float: left;
+  width: 100%;
+  margin-top: 20px;
+}
+
+#wrapper #articles {
+  float: left;
+  width: 80%;
+  margin-left: 10%;
+}
+
+#wrapper #articles article {
+  float: left;
+  background-image: url(../image/fonstat.jpg);
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 3px solid #643266;
+  min-height: 600px;;
+  margin-bottom: 2em;
+}
+
+@media (min-width: 900px) {         /* adaptivnost' */ /* adaptivnost' */
+#wrapper #articles article {
+  width: 31.333%;
+  margin-right: 2%;
+}}
+
+@media (max-width: 899px) and (min-width: 700px) {         /* adaptivnost' */ /* adaptivnost' */
+ 
+#wrapper #articles article {
+  width: 80%;
+  margin-right: 2%;
+  }}
+
+@media (max-width: 699px) {         /* adaptivnost' */ /* adaptivnost' */
+#wrapper #articles article {
+width: 100%;
+margin-bottom: 10px;
+margin-right: 2%;
+}}
+
+#wrapper #articles article img {
+  width: 100%;
+  height: 550px;
+  border-radius: 5px 5px 0px 0px;
+  border-bottom: 1px solid silver;
+  margin-bottom: 10px;
+}
+
+#wrapper #articles article h2 {
+  width: 90%;
+  margin-left: 5%;
+  font-weight: normal;
+  font-size: 2.3em;
+  color: #4a4a4a;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#wrapper #articles article span {
+  width: 80%;
+  margin-left: 2%;
+  margin-bottom: 10px;
+}
+
+#wrapper #articles article p {
+  width: 80%;
+  margin-left: 10%;
+  margin-bottom: 25px;
+}
+
+.size{font-size: 1.5em;}
+
+.letter {
+  width: 80%;
+  margin-left: 60%;
+  margin-bottom: 10px;
+  font-size: 0.9em;
+  color: #000;
+  background-color: #999999;
+  border-radius: 5px;
+}
+
+#wrapper #articles article a {
+  padding: 8px;
+  border: 1px solid silver;
+  background-color: #d1b797;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  color: #ffffff;
+  margin-left: 30%;
+  
+  /*float: left;  margin-top: 10px;  промежуток между строк */ /*line-height: 10px;*/
+}
+
+#wrapper #articles article a:hover {
+  padding: 8px;
+  border: 1px solid silver;
+  background-color: #4ed44e;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  color: #ffffff;
+  margin-left: 30%;
+  /*float: left;  margin-top: 10px;  промежуток между строк*/
+}
+
+/* Cтили для страницы "О нас" */
+
+#about_us{
+  width: 60%;
+  float: left;
+  background-color: #fafafa;
+  border-radius: 5px;
+  border: 1px solid silver;
+  box-sizing: border-box;
+  padding: 1%;
+}
+
+#columRight {
+  width: 30%;
+  float: left;
+  margin-left: 5%;
+  background-color: #fafafa;
+  border-radius: 5px;
+  border: 1px solid silver;
+  box-sizing: border-box;
+  padding: 1%;
+}
+
+/* Стили для формы */
+
+form {
+  width: 60%;
+  margin-left: 20%;
+  float: left;
+}
+
+form label {
+  float: left;
+  width: 100%;
+  margin-bottom: 10px;
+
+}
+
+form input {
+  border-radius: 5px;
+  border: 2px solid silver;
+  padding: 5px;
+  float: left;
+  clear: both;
+  background-color: #fafafa;
+  width: 40%;
+  margin-bottom: 10px;
+}
+
+form input:focus, form textarea:focus {border: 2px solid #f58b8b;}
+
+form textarea {
+  width: 60%;
+  float: left;
+  clear: both;
+  background-color: #fafafa;
+  border: 2px solid silver;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1.7em;
+}
+
+form #send {
+  float: left;
+  padding: 10px;
+  background-color: #f37a7a;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-size: 1.5em;
+  color: #fff;
+
+}
+
+form #send:hover {
+  background-color: #fa923c;
+}
+
+/* Центральный блок сайта*/
+
+#main_soc_block{
+  width: 100%;
+  padding: 2% 0;
+  border: 3px solid #f478f8;
+  margin: 20px 0;
+  float: left;
+  background: url("../image/123.jpg");
+  background-size: cover;
+  height: 200px;
+  border-radius: 20px;
+}
+
+#main_soc_block_in{
+  text-align: center;
+  padding: 1%;
+  color: black;
+  height: 200px;
+  background-color: #fafafa;
+  border: 1px solid silver;
+  box-sizing: border-box; /* adaptivnost' */ /* adaptivnost' */ /* adaptivnost' */
+  border-radius: 7px;
+  width: 500px;
+  max-width: 98%; /* adaptivnost' */ /* adaptivnost' */ /* adaptivnost' */
+}
+
+#main_soc_block_in a{
+  float: left;
+  padding: 5px 10px;
+  background-color: #e9af32;
+  border-radius: 6px;
+  color: #000;
+  margin-left: 40%;
+  margin-top: 15px;
+}
+
+#main_soc_block h3 {margin-bottom: 10px;}
+
+/* Стили для футера*/
+
+footer {
+  border-top: 1px solid #000000;
+  margin-top: 10px;
+  padding: 1%;
+  padding-bottom: 3%;
+}
+
+footer img {
+  float: right;
+  margin-right: 5px;
+  width: 10%;
+}
+
+#page-wrap:after {
+  content: "";
+  display: block;
+}
+footer,
+#page-wrap:after {
+  height: 10px;
+}
+
+#page-wrap {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  box-align: center;
+  min-height: 94%;
+  margin-bottom: -10px;
+}
